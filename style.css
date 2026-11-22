@@ -1,0 +1,59 @@
+/* Custom CSS styling for Tina's Bite */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@800;900&display=swap');
+
+:root {
+  --primary-gold: #fbbf24;
+  --accent-red: #dc2626;
+  --dark-bg: #111827;
+  --card-bg: #1f2937;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark-bg);
+  color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbbf24;
+  border-radius: 4px;
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(31, 41, 55, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Glowing text and borders */
+.glow-gold {
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.25);
+}
+
+/* Custom Animation Utilities */
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

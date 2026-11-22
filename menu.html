@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu & Ordering | Tina's Bite</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-950 text-gray-100 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-amber-400 text-gray-950 p-2.5 rounded-full font-black text-xl">
+          <i class="fa-solid fa-utensils"></i>
+        </div>
+        <div>
+          <h1 class="heading-font text-xl md:text-2xl font-black text-amber-400">TINA'S BITE</h1>
+          <p class="text-[10px] text-gray-400 tracking-widest uppercase font-semibold">Ada & Sege Menu</p>
+        </div>
+      </a>
+
+      <button onclick="toggleCartDrawer()" class="relative bg-amber-400 hover:bg-amber-300 text-gray-950 font-bold px-5 py-2.5 rounded-xl shadow-md transition flex items-center gap-2">
+        <i class="fa-solid fa-cart-shopping"></i> My Cart
+        <span class="cart-count-badge bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-extrabold">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full">
+    <!-- Category Tabs -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 no-scrollbar">
+      <button onclick="filterCategory('all', this)" class="cat-btn bg-amber-400 text-gray-950 px-5 py-2 rounded-xl font-bold whitespace-nowrap text-sm shadow">All Menu</button>
+      <button onclick="filterCategory('shawarma', this)" class="cat-btn bg-gray-800 text-gray-300 px-5 py-2 rounded-xl font-bold whitespace-nowrap text-sm hover:bg-gray-700">Shawarma</button>
+      <button onclick="filterCategory('fries', this)" class="cat-btn bg-gray-800 text-gray-300 px-5 py-2 rounded-xl font-bold whitespace-nowrap text-sm hover:bg-gray-700">Loaded Fries</button>
+      <button onclick="filterCategory('noodles', this)" class="cat-btn bg-gray-800 text-gray-300 px-5 py-2 rounded-xl font-bold whitespace-nowrap text-sm hover:bg-gray-700">Noodles</button>
+      <button onclick="filterCategory('pizza', this)" class="cat-btn bg-gray-800 text-gray-300 px-5 py-2 rounded-xl font-bold whitespace-nowrap text-sm hover:bg-gray-700">Pizza</button>
+      <button onclick="filterCategory('burger', this)" class="cat-btn bg-gray-800 text-gray-300 px-5 py-2 rounded-xl font-bold whitespace-nowrap text-sm hover:bg-gray-700">Burgers</button>
+    </div>
+
+    <!-- Menu Grid -->
+    <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <!-- Shopping Cart Slide-over Drawer -->
+  <div id="cart-drawer" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden transition-opacity">
+    <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-gray-900 border-l border-gray-800 p-6 flex flex-col h-full">
+      <div class="flex items-center justify-between pb-4 border-b border-gray-800">
+        <h3 class="text-xl font-bold text-amber-400 flex items-center gap-2">
+          <i class="fa-solid fa-bag-shopping"></i> Your Order
+        </h3>
+        <button onclick="toggleCartDrawer()" class="text-gray-400 hover:text-white text-xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="cart-items" class="flex-grow overflow-y-auto py-4 space-y-4"></div>
+
+      <div class="border-t border-gray-800 pt-4 space-y-4">
+        <div class="flex justify-between items-center text-lg font-bold">
+          <span>Subtotal:</span>
+          <span id="cart-total" class="text-amber-400">GH₵ 0.00</span>
+        </div>
+        <a href="payment.html" class="w-full bg-amber-400 hover:bg-amber-300 text-gray-950 font-black py-4 rounded-xl text-center block shadow-lg transition">
+          Proceed to Checkout <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

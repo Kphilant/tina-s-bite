@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tina's Bite | Delicious Shawarma & Noodles</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-950 text-gray-100 flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-yellow-500 via-amber-500 to-red-600 text-black py-2 px-4 font-bold text-xs md:text-sm text-center tracking-wide">
+    🚀 ONLINE ORDERS ONLY • FAST DELIVERY ANYWHERE WITHIN ADA & SEGE-ADA! 📞 WHATSAPP: 0551011153
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-gray-900/90 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-amber-400 text-gray-950 p-2.5 rounded-full font-black text-xl shadow-lg">
+          <i class="fa-solid font-bold fa-utensils"></i>
+        </div>
+        <div>
+          <h1 class="heading-font text-xl md:text-2xl font-black tracking-wider text-amber-400">TINA'S BITE</h1>
+          <p class="text-[10px] text-gray-400 tracking-widest uppercase font-semibold">Tasty Meals! Always!</p>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="menu.html" class="relative bg-amber-400 hover:bg-amber-300 text-gray-950 font-bold px-5 py-2.5 rounded-xl shadow-md transition flex items-center gap-2">
+          <i class="fa-solid fa-utensils"></i> Order Food
+          <span class="cart-count-badge bg-red-600 text-white text-xs px-2 py-0.5 rounded-full font-extrabold hidden">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Promo Video -->
+  <main class="flex-grow">
+    <section class="relative py-16 md:py-24 px-4 overflow-hidden">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <!-- Left Column: Text & CTA -->
+        <div class="text-center lg:text-left">
+          <span class="bg-red-600/20 text-red-400 border border-red-500/30 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold uppercase tracking-widest mb-6 inline-block">
+            🔥 Homemade • Hot & Fresh • Made to Order
+          </span>
+          
+          <h2 class="heading-font text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+            Delicious Shawarma & <br><span class="text-amber-400">Assorted Noodles</span>
+          </h2>
+          
+          <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+            Craving the best meals in Ada & Sege? We bring juicy shawarmas, loaded fries, tasty pizzas, and burgers right to your doorstep.
+          </p>
+
+          <div class="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
+            <a href="menu.html" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-300 text-gray-950 font-extrabold px-8 py-4 rounded-xl text-lg shadow-xl hover:scale-105 transition text-center">
+              View Menu & Order <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+            <a href="https://wa.me/233551011153" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg flex items-center justify-center gap-2 transition">
+              <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Embedded Promo Video -->
+        <div class="flex justify-center">
+          <div class="relative w-full max-w-sm bg-gray-900 border-4 border-amber-400/40 rounded-3xl overflow-hidden shadow-2xl glow-gold">
+            <video autoplay loop muted playsinline class="w-full h-[600px] object-cover">
+              <!-- Replace src with your hosted video file URL or keep relative if placed in project folder -->
+              <source src="./tina bita.mp4" type="video/mp4" >
+              Your browser does not support the video tag.
+            </video>
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-gray-950 via-gray-950/60 to-transparent p-4 text-center">
+              <p class="text-xs font-bold text-amber-400 uppercase tracking-wider">Tina's Bite Experience</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Featured Food Display (Without Prices) -->
+    <section class="py-16 px-4 max-w-7xl mx-auto border-t border-gray-800">
+      <div class="text-center mb-12">
+        <h3 class="text-amber-400 font-bold uppercase tracking-widest text-xs md:text-sm mb-2">Our Specialties</h3>
+        <h2 class="heading-font text-3xl md:text-4xl font-extrabold text-white">Made Fresh for Your Cravings</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Item 1 -->
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden group hover:border-amber-400/50 transition">
+          <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Shawarma">
+          <div class="p-5">
+            <h4 class="font-bold text-lg text-white mb-1">Special Chicken Shawarma</h4>
+            <p class="text-gray-400 text-xs leading-relaxed">Wrapped with juicy marinated chicken, hot garlic sauce, veggies & fries.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden group hover:border-amber-400/50 transition">
+          <img src="https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Loaded Fries">
+          <div class="p-5">
+            <h4 class="font-bold text-lg text-white mb-1">Tina's Loaded Fries</h4>
+            <p class="text-gray-400 text-xs leading-relaxed">Crispy golden fries smothered in melted cheese, bacon bits & spicy sauce.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden group hover:border-amber-400/50 transition">
+          <img src="https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Assorted Noodles">
+          <div class="p-5">
+            <h4 class="font-bold text-lg text-white mb-1">Assorted Beef & Egg Noodles</h4>
+            <p class="text-gray-400 text-xs leading-relaxed">Stir-fried flavorful noodles with spiced beef cubes, vegetables, and fried egg.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden group hover:border-amber-400/50 transition">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" class="w-full h-48 object-cover group-hover:scale-105 transition duration-500" alt="Burger">
+          <div class="p-5">
+            <h4 class="font-bold text-lg text-white mb-1">Double Cheese Beef Burger</h4>
+            <p class="text-gray-400 text-xs leading-relaxed">Juicy grilled patty topped with double cheddar cheese, lettuce & special sauce.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="menu.html" class="inline-block bg-gray-800 hover:bg-amber-400 hover:text-gray-950 text-amber-400 font-bold px-8 py-3.5 rounded-xl border border-gray-700 transition">
+          Browse Full Menu & Pricing <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-12 bg-gray-900 border-y border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800/60 p-6 rounded-2xl border border-gray-700/50 flex items-center gap-4">
+          <div class="bg-amber-400/10 text-amber-400 p-4 rounded-xl text-2xl">
+            <i class="fa-solid fa-motorcycle"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-white">Fast Delivery</h3>
+            <p class="text-sm text-gray-400">Quick dispatch anywhere within Ada & Sege-Ada.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/60 p-6 rounded-2xl border border-gray-700/50 flex items-center gap-4">
+          <div class="bg-amber-400/10 text-amber-400 p-4 rounded-xl text-2xl">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-white">MoMo to 0551011153</h3>
+            <p class="text-sm text-gray-400">Direct automated payment verification.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/60 p-6 rounded-2xl border border-gray-700/50 flex items-center gap-4">
+          <div class="bg-amber-400/10 text-amber-400 p-4 rounded-xl text-2xl">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-white">Hot & Fresh</h3>
+            <p class="text-sm text-gray-400">Every order is prepared fresh upon request.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 border-t border-gray-800 py-8 text-center text-gray-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-semibold text-gray-300 mb-2">Tina's Bite • Location: Sege-Ada</p>
+      <p>© 2026 Tina's Bite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
